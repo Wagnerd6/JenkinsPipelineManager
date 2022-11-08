@@ -4,17 +4,12 @@ node {
     }
 
     stage('Test') {
-            echo "Test stage"
-            if(params.RUN_TESTS) {
-                dir('build') {
-                    sh 'bin/Product 7 8 2'
-                    sh 'bin/Product_test'
-                } 
-            }
+        echo "Test stage"
+
                 
     }
 
     ('Deploy') {
-        "Deploy stage"     
+        echo "Deploy stage"     
     }
 }
