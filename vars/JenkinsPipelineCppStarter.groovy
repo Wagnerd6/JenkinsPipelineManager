@@ -8,5 +8,3 @@ def call(String configJsonPath = "PipelineConfig.json", def body) {
         }
     }
 }
-
-return this
