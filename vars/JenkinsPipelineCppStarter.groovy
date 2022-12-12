@@ -2,11 +2,6 @@ def call(String configJsonPath = "PipelineConfig.json", def body) {
     node {
         // Git checkout before load source the file
         // checkout scm
-        stage('Test plugins') {
-            def json = readJSON(file: "PipelineConfig.json", returnPojo: true)
-            println(json)
-        }
-
         stage('Build') {
             echo "Build stage"
             dir("build") {
