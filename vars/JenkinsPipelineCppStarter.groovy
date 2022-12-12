@@ -5,6 +5,7 @@ def call(String configJsonPath = "PipelineConfig.json", def body) {
         stage('Build') {
             echo "Build stage"
         }
+    }
 }
 
 return this
