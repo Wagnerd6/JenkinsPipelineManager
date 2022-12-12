@@ -1,9 +1,12 @@
+import JenkinsHelper
+
 def call(String configJsonPath = "PipelineConfig.json", def body) {
     node {
         // Git checkout before load source the file
         // checkout scm
         stage('Build') {
-            echo "Build stage"
+            JenkinsHelper jenkinsHelper = new JenkinsHelper()
+            jenkinsHelper.callEcho("Use JenkinsHelper")
         }
     }
 }
