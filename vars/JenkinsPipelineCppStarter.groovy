@@ -1,5 +1,3 @@
-import JenkinsHelper
-
 def call(String configJsonPath = "PipelineConfig.json", def body) {
     node {
         // Git checkout before load source the file
