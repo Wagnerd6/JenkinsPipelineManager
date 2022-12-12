@@ -3,8 +3,6 @@ def call(String configJsonPath = "PipelineConfig.json", def body) {
         // Git checkout before load source the file
         // checkout scm
         stage('Test plugins') {
-            sh "env"
-            echo "GIT URL: $GIT_URL"
             def json = readJSON(file: "PipelineConfig.json", returnPojo: true)
             println(json)
         }
